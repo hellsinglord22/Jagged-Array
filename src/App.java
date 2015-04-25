@@ -38,6 +38,7 @@ public class App {
         String leap;
         System.out.printf("Enter yes for leap and no for not leap: ");
         leap = input.next();
+        input.close();
 
         if (leap.equals("yes")) {
             return true;
