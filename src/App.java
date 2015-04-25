@@ -1,3 +1,4 @@
+import java.lang.reflect.AnnotatedArrayType;
 import java.util.Scanner;
 
 /**
@@ -12,6 +13,22 @@ public class App {
         double[][] annualSales = new double[12][];
         Scanner input = new Scanner(System.in);
         boolean leap = isLeap();
+
+        ///make jagged array ///
+        for (int i = 0; i < annualSales.length; i++) {
+            if (i == 3 || i == 5 ||
+                    i == 8 || i == 10) {
+                annualSales[i] = new double[30];
+            }else if (i == 1) {
+                if (leap) {
+                    annualSales[i] = new double[29];
+                } else {
+                    annualSales[i] = new double[28];
+                }
+            } else {
+                annualSales[i] = new double[31];
+            }
+        }
 
     }
 
