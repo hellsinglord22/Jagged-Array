@@ -30,6 +30,16 @@ public class App {
             }
         }
 
+
+        // Print the 2D jagged array //
+        for(int i = 0 ; i < annualSales.length ; i ++ ) {
+            double[] sub = annualSales[i];
+            for (int j = 0; j < sub.length; j++) {
+                System.out.printf("%.0f ", sub[j]);
+            }
+            System.out.println();
+        }
+
     }
 
     /** Create isLeap method to check if it's a leap year or not **/
