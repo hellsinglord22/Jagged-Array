@@ -11,7 +11,7 @@ public class App {
         /// Attributes ///
         double[][] annualSales = new double[12][];
         Scanner input = new Scanner(System.in);
-        boolean leap;
+        boolean leap = isLeap();
 
     }
 
