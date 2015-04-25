@@ -14,4 +14,19 @@ public class App {
         boolean leap;
 
     }
+
+    /** Create isLeap method to check if it's a leap year or not **/
+    public static boolean isLeap(){
+        Scanner input = new Scanner(System.in);
+        String leap;
+        System.out.printf("Enter yes for leap and no for not leap: ");
+        leap = input.next();
+
+        if (leap.equals("yes")) {
+            return true;
+        }else {
+            return false;
+        }
+
+    }
 }
